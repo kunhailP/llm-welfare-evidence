@@ -1,0 +1,9 @@
+# Runtime artifacts
+logs/
+models/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Model outputs and generated development data (regenerate: src/gen/make_evidence_pilot.py)
+results/evidence_pilot/
+data/evidence_pilot/
