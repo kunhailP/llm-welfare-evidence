@@ -1,0 +1,193 @@
+{
+  "stage": "development",
+  "confirmatory": false,
+  "n_items": 880,
+  "n_outputs": 352,
+  "n_bases": 24,
+  "missing_requests": 1408,
+  "effects": {},
+  "rates": {
+    "plain": {
+      "complete": {
+        "accuracy": {
+          "n": 96,
+          "estimate": null,
+          "bounds": [
+            0.9895833333333334,
+            1.0
+          ],
+          "invalid": 1
+        },
+        "meets": {
+          "n": 96,
+          "estimate": null,
+          "bounds": [
+            0.6666666666666666,
+            0.6770833333333334
+          ],
+          "invalid": 1
+        },
+        "fails": {
+          "n": 96,
+          "estimate": null,
+          "bounds": [
+            0.3229166666666667,
+            0.3333333333333333
+          ],
+          "invalid": 1
+        },
+        "needs_info": {
+          "n": 96,
+          "estimate": null,
+          "bounds": [
+            0.0,
+            0.010416666666666666
+          ],
+          "invalid": 1
+        },
+        "balanced_accuracy_bounds": [
+          0.984375,
+          1.0
+        ]
+      },
+      "missing_material": {
+        "accuracy": {
+          "n": 96,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 96,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 96,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 96,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "unsupported_definitive_bounds": [
+          0.0,
+          0.0
+        ],
+        "balanced_accuracy_bounds": [
+          1.0,
+          1.0
+        ]
+      },
+      "missing_irrelevant": {
+        "accuracy": {
+          "n": 96,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 96,
+          "estimate": 0.6666666666666666,
+          "bounds": [
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 96,
+          "estimate": 0.3333333333333333,
+          "bounds": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 96,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "balanced_accuracy_bounds": [
+          1.0,
+          1.0
+        ]
+      },
+      "missing_redundant": {
+        "accuracy": {
+          "n": 64,
+          "estimate": null,
+          "bounds": [
+            0.953125,
+            0.96875
+          ],
+          "invalid": 1
+        },
+        "meets": {
+          "n": 64,
+          "estimate": null,
+          "bounds": [
+            0.953125,
+            0.96875
+          ],
+          "invalid": 1
+        },
+        "fails": {
+          "n": 64,
+          "estimate": null,
+          "bounds": [
+            0.0,
+            0.015625
+          ],
+          "invalid": 1
+        },
+        "needs_info": {
+          "n": 64,
+          "estimate": null,
+          "bounds": [
+            0.03125,
+            0.046875
+          ],
+          "invalid": 1
+        },
+        "balanced_accuracy_bounds": [
+          0.953125,
+          0.96875
+        ]
+      }
+    }
+  },
+  "paired_flip_rates": {},
+  "caveats": [
+    "Development data: no confirmatory p-values or acceptance forecast.",
+    "Repeated renderings, orders and seeds do not increase independent case count.",
+    "Primary interaction uses the same bases; redundant masks exist only in passing profiles.",
+    "Invalid outputs stay missing and receive worst-case outcome bounds.",
+    "Inference does not extend to unseen templates, actual applicants or population harm."
+  ]
+}

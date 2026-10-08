@@ -1,0 +1,94 @@
+{
+  "settings": {
+    "stage": "development",
+    "confirmatory": false,
+    "model": "qwen3-8b",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "data_sha256": "11aea21c62a5f2431b7e6f5e15a3ad40fb407a2cfa1185274640a0e6b63cd8e9",
+    "packet_sha256": "016b20fe9118bee1ca4e0951fe3ac82894d7701e1d7724ddc8092d5aef9a935e",
+    "runner_sha256": "3f5a1fece0415cc2d7284cab689fbf451fb3778ad41a51c083425fa704090b2e",
+    "oracle_sha256": "861044ff6143355ac899040099f98d1129811467b54e9fec21253b567e8af77c",
+    "engine_sha256": "e93d7f53a3b2783a46ae03fbc74305adaa0a4956c1d77ca4c0ad2c786979f2e9",
+    "method": "plain",
+    "seeds": [
+      0
+    ],
+    "orders": [
+      "forward",
+      "reverse"
+    ],
+    "cue": "neutral",
+    "bases": [
+      "dev000",
+      "dev001",
+      "dev002",
+      "dev003",
+      "dev004",
+      "dev005",
+      "dev006",
+      "dev007",
+      "dev008",
+      "dev009",
+      "dev010",
+      "dev011",
+      "dev012",
+      "dev013",
+      "dev014",
+      "dev015",
+      "dev016",
+      "dev017",
+      "dev018",
+      "dev019",
+      "dev020",
+      "dev021",
+      "dev022",
+      "dev023"
+    ],
+    "thinking": "on",
+    "max_tokens": 4096,
+    "max_model_len": 8192,
+    "max_num_seqs": 8,
+    "batch_size": 32,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "gpu_memory_utilization": 0.9,
+    "n_requests": 352
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.13.0+cu130",
+    "transformers": "5.14.1",
+    "vllm": "0.30.0",
+    "gpu": "NVIDIA L40",
+    "cuda": "13.0"
+  },
+  "dataset_manifest": {
+    "schema": "evidence-pilot-v1",
+    "stage": "development",
+    "confirmatory": false,
+    "bases": 24,
+    "seed": 11,
+    "n": 880,
+    "sha256": "11aea21c62a5f2431b7e6f5e15a3ad40fb407a2cfa1185274640a0e6b63cd8e9",
+    "packet_sha256": "016b20fe9118bee1ca4e0951fe3ac82894d7701e1d7724ddc8092d5aef9a935e",
+    "generator_sha256": "db68bf567ddd9b8683422e31f93438876ce9aebc0a6adb11baa19fd1f679cd06",
+    "oracle_sha256": "861044ff6143355ac899040099f98d1129811467b54e9fec21253b567e8af77c",
+    "conditions": {
+      "complete": 240,
+      "missing_material": 240,
+      "missing_irrelevant": 240,
+      "missing_redundant": 160
+    },
+    "gold": {
+      "FAILS": 160,
+      "NEEDS_INFO": 240,
+      "MEETS": 480
+    },
+    "legal_profiles": 3,
+    "rendering_styles": 2,
+    "cue_variants": 3,
+    "unique_complete_legal_records": 24,
+    "caveat": "Synthetic repeated legal profiles; item count is not independent case count. No held-out generalization, expert legal audit or human construct validation."
+  }
+}
