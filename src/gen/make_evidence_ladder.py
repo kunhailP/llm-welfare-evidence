@@ -109,6 +109,16 @@ PROVENANCE = {
     "unearned_income": "The unearned income was verified from benefit award letters received on March 28.",
 }
 PADDING = "The applicant's mailing address was verified from a utility statement received on March 28."
+PENDING = {   # E3: verification requested and pending; E3s: the applicant's stated value plus the pending request
+    "approved_program_hours": ("The approved-work-program hours for this month are pending verification: the attendance record has been requested from the program provider and has not yet been received.",
+                               "The applicant reports approved-work-program hours of {claim} for this month; the attendance record has been requested from the program provider and has not yet been received."),
+    "medical_exemption": ("The medical exemption status is pending verification: the physician's certification has been requested and has not yet been received.",
+                          "The applicant reports a medical exemption; the physician's certification has been requested and has not yet been received."),
+    "earned_income": ("The earned income for this month is pending verification: employer pay records have been requested and have not yet been received.",
+                      "The applicant reports earned income of ${claim} for this month; employer pay records have been requested and have not yet been received."),
+    "unearned_income": ("The unearned income for this month is pending verification: benefit award letters have been requested and have not yet been received.",
+                        "The applicant reports unearned income of ${claim} for this month; benefit award letters have been requested and have not yet been received."),
+}
 SELF_REPORT = {
     "approved_program_hours": "The applicant states approved-work-program hours of {claim} for this month; no attendance record is on file.",
     "medical_exemption": "The applicant states that a doctor has certified them unfit for work; no medical documentation is on file.",
@@ -158,6 +168,9 @@ def record_lines(pathway: str, record: dict, evidence: str, pivot: str | None, c
         ]
     if evidence == "E1":
         lines = [l for l in lines if l[0] != pivot]
+    elif evidence in ("E3", "E3s"):
+        text = PENDING[pivot][0 if evidence == "E3" else 1].format(claim=f"{claim:,}" if isinstance(claim, int) else claim)
+        lines = [(f, c, n) if f != pivot else (f, f"{c.split(':')[0]}: pending verification ({text})", text) for f, c, n in lines]
     elif evidence == "E2":
         statement = SELF_REPORT[pivot].format(claim=f"{claim:,}" if isinstance(claim, int) else claim)
         lines = [(f, c, n) if f != pivot else (f, f"{c.split(':')[0]}: no record on file ({statement})", statement)
@@ -257,7 +270,7 @@ def conditions_for(base: dict) -> dict:
     if pivot is not None:
         material = copy.deepcopy(full)
         material[pivot] = None
-        for evidence in ("E0", "E1", "E2"):
+        for evidence in ("E0", "E1", "E2", "E3", "E3s"):
             out[f"missing_material@{evidence}"] = (copy.deepcopy(material), evidence, None, None)
         out["restored_material"] = (copy.deepcopy(full), "E0", PROVENANCE[pivot], None)
         out["padded_irrelevant"] = (copy.deepcopy(material), "E0", PADDING, None)
@@ -266,7 +279,8 @@ def conditions_for(base: dict) -> dict:
 
 
 def generate(bases: int = 12, seed: int = 11, pathways=("abawd", "gross"), surfaces=SURFACES,
-             styles=STYLES, gross_full: bool = False, packet_variant: str | None = None) -> list[dict]:
+             styles=STYLES, gross_full: bool = False, packet_variant: str | None = None,
+             pending_set: bool = False) -> list[dict]:
     """packet_variant (2026-10-12, prompt-artefact check): 'norule' removes the two evidence lines that say an
     unestablished fact is not zero / a statement establishes nothing; 'emph' repeats that rule as a final reminder.
     ABAWD pathway only; items are otherwise byte-identical to the main set (same seed)."""
@@ -283,6 +297,9 @@ def generate(bases: int = 12, seed: int = 11, pathways=("abawd", "gross"), surfa
             full_label = oracle.complete_label({k: v for k, v in full.items() if k != "preferred_contact_window"} if pathway == "abawd" else full)
             for condition_key, (record, evidence, extra, packet_extra) in conditions_for(base).items():
                 condition = condition_key.split("@")[0]
+                pending_level = condition_key.endswith(("@E3", "@E3s"))
+                if pending_set != pending_level:   # the pending set holds only E3/E3s; the main set never does
+                    continue
                 if pathway == "gross" and not gross_full and condition not in ("complete", "missing_material", "missing_irrelevant", "missing_redundant"):
                     continue
                 legal = {k: v for k, v in record.items() if k != "preferred_contact_window"} if pathway == "abawd" else record
@@ -315,7 +332,7 @@ def generate(bases: int = 12, seed: int = 11, pathways=("abawd", "gross"), surfa
                                 packet_extra="\n".join(extras) if extras else None,
                                 gold=oracle_out["label"], possible_labels=oracle_out["possible_labels"],
                                 minimal_questions=oracle.minimal_questions(legal),
-                                pivot=base["pivot"], self_report_claim=base["claim"] if evidence == "E2" else None,
+                                pivot=base["pivot"], self_report_claim=base["claim"] if evidence in ("E2", "E3s") else None,
                                 full_record=copy.deepcopy(full),
                             )
                             if packet_variant and pathway == "abawd":
@@ -360,11 +377,12 @@ def main():
     p.add_argument("--styles", default="narrative", help="checklist,narrative")
     p.add_argument("--gross-full", action="store_true", help="also restoration arms and E1/E2 on the gross pathway")
     p.add_argument("--packet-variant", choices=("norule", "emph"), default=None, help="prompt-artefact check (ABAWD only)")
+    p.add_argument("--pending-set", action="store_true", help="only the E3 / E3s (verification pending) missing-material items")
     p.add_argument("--out", type=Path, default=ROOT / "data/evidence_ladder/dev.jsonl")
     a = p.parse_args()
     m = write_dataset(a.out, bases=a.bases, seed=a.seed, pathways=tuple(a.pathways.split(",")),
                       surfaces=tuple(a.surfaces.split(",")), styles=tuple(a.styles.split(",")), gross_full=a.gross_full,
-                      packet_variant=a.packet_variant)
+                      packet_variant=a.packet_variant, pending_set=a.pending_set)
     print(json.dumps({k: v for k, v in m.items() if k != "cells"}, indent=2))
     print(json.dumps(m["cells"], indent=1))
 

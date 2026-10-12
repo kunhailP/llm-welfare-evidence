@@ -31,7 +31,7 @@ ORDERS = {
     "reverse_cycle1": ("FAILS", "MEETS", "NEEDS_INFO"),
     "reverse_cycle2": ("MEETS", "NEEDS_INFO", "FAILS"),
 }
-METHODS = ("plain", "fact_table", "extract_rule", "request")
+METHODS = ("plain", "fact_table", "fact_table_stmt", "extract_rule", "request")
 REQUESTABLE = {
     "abawd": ("paid_work_hours", "approved_program_hours", "medical_exemption", "preferred_contact_window"),
     "gross": ("household_size", "earned_income", "unearned_income", "preferred_contact_window"),
@@ -68,8 +68,19 @@ def build_prompt(packet: str, item: dict, method: str, order: str) -> str:
         raise ValueError("unknown method or order")
     # Never include full_record, gold, profile, condition or oracle questions.
     case = item["case_text"]
-    if method == "fact_table":
+    if method in ("fact_table", "fact_table_stmt"):
+        # The exact partial record, nulls preserved, as a machine-readable table (no narrative).
         case = json.dumps(item["record"], sort_keys=True)
+        if method == "fact_table_stmt" and item.get("self_report_claim") is not None:
+            # 2026-10-12 (external review 2, item 3): the same correct record plus the applicant's statement,
+            # so that the decision step is tested with the facts already right.
+            pivot = item["pivot"]
+            claim = item["self_report_claim"]
+            shown = (f"${claim:,}" if pivot in ("earned_income", "unearned_income") else str(claim))
+            status = "requested and not yet received" if item.get("evidence") == "E3s" else "not on file"
+            case += ("\nStatements on file (not part of the verified record): the applicant states "
+                     + (f"{pivot} = {shown}" if pivot != "medical_exemption" else "that a doctor has certified them unfit for work")
+                     + f"; the supporting record is {status}.")
     text = packet.strip()
     if item.get("packet_extra"):
         text += "\n\n" + item["packet_extra"].strip()

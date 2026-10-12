@@ -59,8 +59,10 @@ changes the cue gap in opposite directions on S1 (7 high-premature vs 1) and S2 
 without a stable sign.
 
 ## 5. Reading
-H1 (moral substitution) is not supported at 8B on any surface or evidence state. H2 (over-verification of the "lazy"
-applicant) is not supported. What the ladder found instead is a large, rule-indexed failure of evidence handling:
+H1 (moral substitution): no consistent effect in the predicted direction at 8B on any surface or evidence state; the
+paired differences reach +0.10 in P(FAILS) (S2 E2, interval -0.06 to +0.29) and the intervals include 0, so effects of
+that size are not excluded by 12 bases, and the sign varies across cells. H2 (over-verification of the "lazy" applicant):
+no consistent effect (0-2 flips per cell). Neither is "no effect"; both are "not supported at this precision". What the ladder found instead is a large, rule-indexed failure of evidence handling:
 the model resolves an unestablished fact as an established zero, which on a work requirement means denial of the
 applicant whose program hours are not yet documented, in 31-56 % of cases when the line is absent and 71-94 % when
 the applicant's own statement is on file. This is the deployment case (hours self-reported, attendance record pending).
@@ -87,18 +89,21 @@ is read as the exemption's absence. Cue sentences never enter it.
 protocol offers REQUEST instead). On missing-material records the model requests verification in 83-96 % of cases and
 **always names exactly the pivotal field** (0 irrelevant, 0 extra, 0 misses); premature answers 0-7 of 48 per cue, all FAILS,
 no cue direction (high 2 / low 2 / neutral 1 on S0; 2 / 6 / 0 on S2; 0 everywhere on gross). After the requested field is
-supplied from the fixed record, 100 % of final decisions are correct and no second request is made. On definitive records
+supplied from the fixed record, 100 % of final decisions are correct and no second request is made; over all 1,200
+missing-material inputs the full path (correct request, then correct final answer) is completed in 1,113 = 92.75 %, with 37
+premature answers and 50 invalid first turns. Both numbers are reported together. On definitive records
 (complete, irrelevant-missing, redundant) it answers directly in 94-100 % of cases; the 0-3 requests per 32 on the
 redundant mask are the same disjunction slack as under plain. This is the behaviour the legal review names as the
 correct one (NEEDS_INFO with the required verification named). L3 covers E0 only; L3b (queued) applies it where the
 plain error is large (E1, E2).
 
 ## 8. Extraction diagnostic (L4), Qwen3-8B, S2, every condition, forward order, seeds 0 and 1
-1,560 requests. Strict parser: 473 of 1,560 (30 %) INVALID, almost all a valid FACTS JSON object followed by a trailing word
-(`NEEDS_INFO`, `RESULT: ...`); the post-hoc lenient parse (first JSON object after FACTS:, documented in the scorer)
-resolves 463 of them, leaving 10. Numbers below are lenient; the strict file is qwen3-8b_extract_score_strict.json.
+1,560 requests. Strict (pre-registered) parser: 478 of 1,560 (30.6 %) INVALID, almost all a valid FACTS JSON object followed
+by a trailing word (`NEEDS_INFO`, `RESULT: ...`); the post-hoc lenient parse (first JSON object after FACTS:, documented in
+the scorer) resolves 463 of them, leaving 15. **The table below is the post-hoc lenient reading**; the strict reading is in
+qwen3-8b_extract_score_strict.json, and the parser rule is to be frozen (strict vs lenient, decided once) before the main study.
 
-| cell (ABAWD, S2) | plain NEEDS_INFO | extract -> oracle NEEDS_INFO | exact record | unknown filled with a value |
+| cell (ABAWD, S2) | plain NEEDS_INFO | extract -> oracle NEEDS_INFO (lenient parse) | exact record | unknown filled with a value |
 | --- | --- | --- | --- | --- |
 | E0 missing material | 0.88-0.96 | 0.96-1.00 | 23-24 / 24 | 0 |
 | E1 line absent | 0.44-0.54 | 0.79-0.96 | 19-23 / 24 | 0-4 / 24 |
@@ -108,7 +113,27 @@ Complete, irrelevant, redundant, restored records: oracle accuracy 1.00, 0 fabri
 
 Reading: the same model that denies 71-94 % of E2 applicants when asked to decide extracts the record correctly
 92-100 % of the time when asked only for the facts, preserving the unknown as null; the fixed oracle then returns
-NEEDS_INFO. The failure is in the decision step (an unestablished fact defaulted to zero while applying the rule), not in
-fact extraction. Null-preserving extraction plus a rule engine is therefore a working mitigation at 8B, with a residual
-fabrication rate of 0-4 per 24 at E1 (the absent line is sometimes filled with a value) that the main study must track.
+NEEDS_INFO. What this shows is that separating fact extraction from the determination removes most of the error; it does
+not by itself locate the error inside the model, because the comparison changes the prompt, the output format, the task
+and who decides at once (external review 2, 2026-10-12). The direct test of the decision step is queued: the same
+partial record, with its nulls, given to the model to decide (method fact_table_stmt). Residual fabrication 0-4 per 24
+at E1 (the absent line is sometimes filled with a value) is a metric the main study must track.
 Cue: no direction in any extraction metric (the one 4/24 fill is the valence-positive cell).
+
+## 9. Pending-verification wording (E3 / E3s), GPT-5, S2, both pathways (2026-10-12; review 2 item 2)
+200 of 200 parsed (one run, forward order, about $2). E3 = "pending verification: the record has been requested and has not
+yet been received" (no stated value); E3s = the applicant's stated value plus the same pending request.
+
+| pathway | E2 "no record on file" (section 6) | E3 pending, no value | E3s stated value + pending |
+| --- | --- | --- | --- |
+| ABAWD NEEDS_INFO | 0.67 (FAILS 0.33, all medical) | 1.00 | 0.95 (FAILS 3 of 60, all medical, one base) |
+| gross NEEDS_INFO | 1.00 | 1.00 | 1.00 |
+
+Reading (rule in design_D_ladder.md, last section): for GPT-5 most of the E2 error is a wording effect: "no medical
+documentation is on file" is read as a completed, failed verification ("not documented, so it does not apply"), while
+"certification requested and not yet received" is read as pending in 57 of 60 cases; the 3 residual denials use the same
+sentence ("not documented on file yet, so it cannot be counted"). The main study therefore carries both wordings as
+separate cells, and the paper states the frontier result as: the model denies when the record says the document is
+absent, and holds when it says the document is pending; both records are, under the regulation, the same pending
+verification (legal review, Q5). Cue contrasts: 2 flips in 100 pairs (both toward FAILS for high / valence-positive on
+the same base); no direction. Qwen3-8B and 14B on the same items: queue C.

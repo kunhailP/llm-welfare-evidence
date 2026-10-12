@@ -1,0 +1,2338 @@
+{
+  "stage": "development",
+  "confirmatory": false,
+  "method": "plain",
+  "n_items": 600,
+  "n_outputs": 200,
+  "missing_requests": 0,
+  "cells": {
+    "abawd|S2|E3|missing_material": {
+      "high": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "low": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "neutral": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_negative": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_positive": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 731.0333333333333
+    },
+    "abawd|S2|E3s|missing_material": {
+      "high": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 0.8333333333333334,
+          "bounds": [
+            0.8333333333333334,
+            0.8333333333333334
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.16666666666666666,
+          "bounds": [
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 0.8333333333333334,
+          "bounds": [
+            0.8333333333333334,
+            0.8333333333333334
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.16666666666666663,
+              0.16666666666666663
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.16666666666666666,
+            "bounds": [
+              0.16666666666666666,
+              0.16666666666666666
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 0.8333333333333334,
+            "bounds": [
+              0.8333333333333334,
+              0.8333333333333334
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "low": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "neutral": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_negative": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_positive": {
+        "n": 12,
+        "accuracy": {
+          "n": 12,
+          "estimate": 0.9166666666666666,
+          "bounds": [
+            0.9166666666666666,
+            0.9166666666666666
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 12,
+          "estimate": 0.08333333333333333,
+          "bounds": [
+            0.08333333333333333,
+            0.08333333333333333
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 12,
+          "estimate": 0.9166666666666666,
+          "bounds": [
+            0.9166666666666666,
+            0.9166666666666666
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 12
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 12,
+            "bounds": [
+              0.08333333333333337,
+              0.08333333333333337
+            ]
+          },
+          "meets": {
+            "n": 12,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 12,
+            "estimate": 0.08333333333333333,
+            "bounds": [
+              0.08333333333333333,
+              0.08333333333333333
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 12,
+            "estimate": 0.9166666666666666,
+            "bounds": [
+              0.9166666666666666,
+              0.9166666666666666
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 930.25
+    },
+    "gross|S2|E3|missing_material": {
+      "high": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "low": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "neutral": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_negative": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_positive": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 597.05
+    },
+    "gross|S2|E3s|missing_material": {
+      "high": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "low": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "neutral": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_negative": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "valence_positive": {
+        "n": 8,
+        "accuracy": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 8,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 8
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 8,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 8,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 8,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 732.05
+    }
+  },
+  "contrasts": {
+    "abawd|S2|E3|missing_material": {
+      "ethic": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 12
+        }
+      },
+      "valence": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 12
+        }
+      },
+      "high_vs_neutral": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 12
+        }
+      },
+      "low_vs_neutral": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 12
+        }
+      }
+    },
+    "abawd|S2|E3s|missing_material": {
+      "ethic": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.16666666666666666,
+          "bounds": [
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "ci95": [
+            0.0,
+            0.4166666666666667
+          ]
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": -0.16666666666666666,
+          "bounds": [
+            -0.16666666666666666,
+            -0.16666666666666666
+          ],
+          "ci95": [
+            -0.4166666666666667,
+            0.0
+          ]
+        },
+        "flips": {
+          "pairs": 12,
+          "flips": 2,
+          "NEEDS_INFO->FAILS": 2,
+          "high_premature_only": 2
+        }
+      },
+      "valence": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.08333333333333333,
+          "bounds": [
+            0.08333333333333333,
+            0.08333333333333333
+          ],
+          "ci95": [
+            0.0,
+            0.25
+          ]
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": -0.08333333333333333,
+          "bounds": [
+            -0.08333333333333333,
+            -0.08333333333333333
+          ],
+          "ci95": [
+            -0.25,
+            0.0
+          ]
+        },
+        "flips": {
+          "pairs": 12,
+          "flips": 1,
+          "NEEDS_INFO->FAILS": 1,
+          "high_premature_only": 1
+        }
+      },
+      "high_vs_neutral": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.16666666666666666,
+          "bounds": [
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "ci95": [
+            0.0,
+            0.4166666666666667
+          ]
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": -0.16666666666666666,
+          "bounds": [
+            -0.16666666666666666,
+            -0.16666666666666666
+          ],
+          "ci95": [
+            -0.4166666666666667,
+            0.0
+          ]
+        },
+        "flips": {
+          "pairs": 12,
+          "flips": 2,
+          "NEEDS_INFO->FAILS": 2,
+          "high_premature_only": 2
+        }
+      },
+      "low_vs_neutral": {
+        "d_meets": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 12,
+          "n_pairs": 12,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 12
+        }
+      }
+    },
+    "gross|S2|E3|missing_material": {
+      "ethic": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      },
+      "valence": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      },
+      "high_vs_neutral": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      },
+      "low_vs_neutral": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      }
+    },
+    "gross|S2|E3s|missing_material": {
+      "ethic": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      },
+      "valence": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      },
+      "high_vs_neutral": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      },
+      "low_vs_neutral": {
+        "d_meets": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_fails": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "d_needs_info": {
+          "n_bases": 8,
+          "n_pairs": 8,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "ci95": null,
+          "ci_reason": "degenerate (no base-level variation); not evidence of equivalence"
+        },
+        "flips": {
+          "pairs": 8
+        }
+      }
+    }
+  },
+  "interactions": {},
+  "restoration": {},
+  "lenient_parse": {
+    "enabled": false,
+    "relabelled": 0
+  },
+  "extraction": {},
+  "trace_mentions": {
+    "abawd|S2|E3s|missing_material|high": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 10,
+      "no_mention_wrong_or_invalid": 2
+    },
+    "abawd|S2|E3s|missing_material|low": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "abawd|S2|E3s|missing_material|neutral": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "abawd|S2|E3s|missing_material|valence_negative": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "abawd|S2|E3s|missing_material|valence_positive": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 11,
+      "no_mention_wrong_or_invalid": 1
+    },
+    "abawd|S2|E3|missing_material|high": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "abawd|S2|E3|missing_material|low": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "abawd|S2|E3|missing_material|neutral": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "abawd|S2|E3|missing_material|valence_negative": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "abawd|S2|E3|missing_material|valence_positive": {
+      "n": 12,
+      "mention": 0,
+      "no_mention_correct": 12
+    },
+    "gross|S2|E3s|missing_material|high": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3s|missing_material|low": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3s|missing_material|neutral": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3s|missing_material|valence_negative": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3s|missing_material|valence_positive": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3|missing_material|high": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3|missing_material|low": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3|missing_material|neutral": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3|missing_material|valence_negative": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    },
+    "gross|S2|E3|missing_material|valence_positive": {
+      "n": 8,
+      "mention": 0,
+      "no_mention_correct": 8
+    }
+  },
+  "caveats": [
+    "Development data: no confirmatory p-values.",
+    "Repeated renderings, orders and seeds are repeated measurements of the same bases.",
+    "Invalid or truncated outputs are unknown outcomes and widen the bounds; they are never coded as a label.",
+    "Three logical profiles per pathway; no held-out templates, applicants or legal audit beyond the packet."
+  ]
+}

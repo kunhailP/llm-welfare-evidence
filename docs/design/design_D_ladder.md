@@ -119,3 +119,23 @@ premature-definitive rate at E1/E2 is unchanged under `emph`, the error is not a
 `norule` raises it, the rule line has some effect but does not remove the error; both are reported. Second open family:
 gpt-oss-20b (always-reasoning, effort medium) on the same S2 cells, plain and request-E1/E2. Models: qwen3-8b, qwen3-14b,
 gpt-oss-20b. Nothing in the main dataset changes (manifest hash unchanged, verified byte-identical).
+
+## External review 2 (2026-10-12) and the pre-registered follow-ups
+The review (recorded in docs/decisions.md) accepted the direction and asked for three changes in interpretation (made in
+docs/results/design_D_ladder_pilot.md and README.md: "no consistent effect in the predicted direction" instead of "cues move
+nothing"; "separating extraction from decision reduces the error" instead of "the failure is in the decision step";
+REQUEST reported as 100 % after a correct request and 92.75 % over all inputs) and two experiments, fixed here before running:
+
+E3 / E3s, the pending-verification states (data/evidence_ladder_pending/, 600 items, all surfaces, both pathways):
+  E3  "pending verification: the record has been requested and has not yet been received" (no stated value);
+  E3s the applicant's stated value plus the same pending request. Gold NEEDS_INFO (the legal review's Q5 reading).
+  Reading rule: if the premature-definitive rate at E3/E3s is far below E2's (the E2 wording "no record on file" being read as
+  a completed, failed verification), the E2 result is partly a wording effect and the main study uses both wordings; if E3s
+  stays near E2, the error is about the unverified claim itself. For the medical pivot this is the review's three-way split:
+  pending (E3), verified not applying (complete nonexempt profile), verified applying (complete exempt profile).
+fact_table_stmt (method): the exact partial record as JSON with nulls, plus one line stating the applicant's claim, given to
+  the model to decide. Reading rule: if the model still resolves the null as zero here, the error is in the decision step
+  with the facts already right; if it does not, the narrative presentation is what triggers it. Compared with fact_table
+  (no statement line) on the same items.
+Main-study primary metric (from the review): the E2 - E0 difference in the premature-definitive rate, and its change under
+each mitigation, with base-level uncertainty; the extraction parser rule (strict or lenient) is frozen before the main study.

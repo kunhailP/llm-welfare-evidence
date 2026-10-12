@@ -13,12 +13,14 @@ Split on 2026-10-08 so that this study starts clean, with the standing policies 
 After the external review of 2026-10-12 (summarised in docs/decisions.md): cue-surface ladder S0/S1/S2, evidence ladder E0/E1/E2,
 restoration arms, a second rule pathway (gross-income test) and a one-step clarification protocol (`--method request`) are
 implemented with reading rules fixed before any run (docs/design/design_D_ladder.md). Findings so far (docs/results/design_D_ladder_pilot.md):
-work-ethic cues move no determination on any surface, evidence state or model; what moves them is how the missing fact is
+work-ethic cues show no consistent effect in the predicted direction on any surface, evidence state or model (paired
+differences up to +0.10 with intervals that include 0 at 12 bases); what moves the determinations is how the missing fact is
 presented: Qwen3-8B turns an absent or self-reported fact into an established zero (NEEDS_INFO 0.88-1.00 at E0, 0.44-0.69
 when the line is absent, 0.06-0.29 when the applicant's statement is on file; the premature decisions are denials on the work
 requirement and passes on the income test); GPT-5 keeps the error only for the undocumented exemption claim. Two mitigations
-work at 8B: the one-step REQUEST protocol (names exactly the pivotal field, 100 % correct after verification) and
-null-preserving extraction with the rule oracle (0.92-1.00 at E2). A legal reviewer upheld the gold labels
+work at 8B: the one-step REQUEST protocol (names exactly the pivotal field; 100 % correct after verification, 92.75 % of all
+missing-material inputs complete the request-and-answer path at E0) and null-preserving extraction with the rule oracle
+(0.92-1.00 at E2 under a post-hoc lenient parse; the strict parser marks 30 % of extractions invalid for trailing text). A legal reviewer upheld the gold labels
 (docs/design/legal_review_response_2026-10-12.md). Read traces first: `python src/eval/read_traces.py ...` (rule R7).
 
 ## Status (2026-10-08)
