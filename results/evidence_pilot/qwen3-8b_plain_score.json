@@ -1,0 +1,415 @@
+{
+  "stage": "development",
+  "confirmatory": false,
+  "n_items": 880,
+  "n_outputs": 3520,
+  "n_bases": 24,
+  "missing_requests": 0,
+  "effects": {
+    "plain": {
+      "cue_gap_complete": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          -0.005208333333333333,
+          0.0
+        ],
+        "ci95": [
+          -0.015625,
+          0.0
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "valence_gap_complete": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          0.0,
+          0.005208333333333333
+        ],
+        "ci95": [
+          0.0,
+          0.015625
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "cue_gap_missing_material": {
+        "n_bases": 24,
+        "estimate": 0.0,
+        "identification_bounds": [
+          0.0,
+          0.0
+        ],
+        "ci95": null,
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_reason": "Degenerate empirical variation; do not interpret a zero-width bootstrap as equivalence."
+      },
+      "valence_gap_missing_material": {
+        "n_bases": 24,
+        "estimate": 0.0,
+        "identification_bounds": [
+          0.0,
+          0.0
+        ],
+        "ci95": null,
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_reason": "Degenerate empirical variation; do not interpret a zero-width bootstrap as equivalence."
+      },
+      "cue_gap_missing_irrelevant": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          -0.010416666666666666,
+          0.0
+        ],
+        "ci95": [
+          -0.026041666666666668,
+          0.0
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "valence_gap_missing_irrelevant": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          -0.005208333333333333,
+          0.0
+        ],
+        "ci95": [
+          -0.015625,
+          0.0
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "cue_gap_missing_redundant": {
+        "n_bases": 16,
+        "estimate": null,
+        "identification_bounds": [
+          -0.03125,
+          -0.0234375
+        ],
+        "ci95": [
+          -0.0703125,
+          0.015625
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "valence_gap_missing_redundant": {
+        "n_bases": 16,
+        "estimate": null,
+        "identification_bounds": [
+          0.0078125,
+          0.015625
+        ],
+        "ci95": [
+          -0.0390625,
+          0.0546875
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "interaction_missing_material_vs_complete": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          0.0,
+          0.005208333333333333
+        ],
+        "ci95": [
+          0.0,
+          0.015625
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "valence_adjusted_interaction_missing_material": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          0.0,
+          0.010416666666666666
+        ],
+        "ci95": [
+          0.0,
+          0.026041666666666668
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "interaction_missing_irrelevant_vs_complete": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          -0.010416666666666666,
+          0.005208333333333333
+        ],
+        "ci95": [
+          -0.026041666666666668,
+          0.015625
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "valence_adjusted_interaction_missing_irrelevant": {
+        "n_bases": 24,
+        "estimate": null,
+        "identification_bounds": [
+          -0.010416666666666666,
+          0.015625
+        ],
+        "ci95": [
+          -0.026041666666666668,
+          0.036458333333333336
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "interaction_missing_redundant_vs_complete": {
+        "n_bases": 16,
+        "estimate": null,
+        "identification_bounds": [
+          -0.03125,
+          -0.0234375
+        ],
+        "ci95": [
+          -0.0703125,
+          0.015625
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      },
+      "valence_adjusted_interaction_missing_redundant": {
+        "n_bases": 16,
+        "estimate": null,
+        "identification_bounds": [
+          -0.046875,
+          -0.03125
+        ],
+        "ci95": [
+          -0.0859375,
+          0.015625
+        ],
+        "ci_scope": "Conditional on these synthetic base profiles and templates.",
+        "ci_method": "Paired base-cluster percentile bootstrap; worst-case bounds for invalid outputs."
+      }
+    }
+  },
+  "rates": {
+    "plain": {
+      "complete": {
+        "accuracy": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.9979166666666667,
+            1.0
+          ],
+          "invalid": 2
+        },
+        "meets": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.6666666666666666,
+            0.66875
+          ],
+          "invalid": 2
+        },
+        "fails": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.33125,
+            0.3333333333333333
+          ],
+          "invalid": 2
+        },
+        "needs_info": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.0,
+            0.0020833333333333333
+          ],
+          "invalid": 2
+        },
+        "balanced_accuracy_bounds": [
+          0.996875,
+          1.0
+        ]
+      },
+      "missing_material": {
+        "accuracy": {
+          "n": 960,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 960,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 960,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 960,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "unsupported_definitive_bounds": [
+          0.0,
+          0.0
+        ],
+        "balanced_accuracy_bounds": [
+          1.0,
+          1.0
+        ]
+      },
+      "missing_irrelevant": {
+        "accuracy": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.9958333333333333,
+            1.0
+          ],
+          "invalid": 4
+        },
+        "meets": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.6666666666666666,
+            0.6708333333333333
+          ],
+          "invalid": 4
+        },
+        "fails": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.32916666666666666,
+            0.3333333333333333
+          ],
+          "invalid": 4
+        },
+        "needs_info": {
+          "n": 960,
+          "estimate": null,
+          "bounds": [
+            0.0,
+            0.004166666666666667
+          ],
+          "invalid": 4
+        },
+        "balanced_accuracy_bounds": [
+          0.99375,
+          1.0
+        ]
+      },
+      "missing_redundant": {
+        "accuracy": {
+          "n": 640,
+          "estimate": null,
+          "bounds": [
+            0.965625,
+            0.96875
+          ],
+          "invalid": 2
+        },
+        "meets": {
+          "n": 640,
+          "estimate": null,
+          "bounds": [
+            0.965625,
+            0.96875
+          ],
+          "invalid": 2
+        },
+        "fails": {
+          "n": 640,
+          "estimate": null,
+          "bounds": [
+            0.0,
+            0.003125
+          ],
+          "invalid": 2
+        },
+        "needs_info": {
+          "n": 640,
+          "estimate": null,
+          "bounds": [
+            0.03125,
+            0.034375
+          ],
+          "invalid": 2
+        },
+        "balanced_accuracy_bounds": [
+          0.965625,
+          0.96875
+        ]
+      }
+    }
+  },
+  "paired_flip_rates": {
+    "plain": {
+      "complete": {
+        "n_bases": 24,
+        "bases_with_any_flip": 0,
+        "fraction": 0.0,
+        "zero_event_one_sided95_upper": 0.11734615615494881,
+        "bound_assumption": "IID base-event Bernoulli draws within this design, not unseen-template coverage."
+      },
+      "missing_material": {
+        "n_bases": 24,
+        "bases_with_any_flip": 0,
+        "fraction": 0.0,
+        "zero_event_one_sided95_upper": 0.11734615615494881,
+        "bound_assumption": "IID base-event Bernoulli draws within this design, not unseen-template coverage."
+      },
+      "missing_irrelevant": {
+        "n_bases": 24,
+        "bases_with_any_flip": 0,
+        "fraction": 0.0,
+        "zero_event_one_sided95_upper": 0.11734615615494881,
+        "bound_assumption": "IID base-event Bernoulli draws within this design, not unseen-template coverage."
+      },
+      "missing_redundant": {
+        "n_bases": 16,
+        "bases_with_any_flip": 4,
+        "fraction": 0.25
+      }
+    }
+  },
+  "caveats": [
+    "Development data: no confirmatory p-values or acceptance forecast.",
+    "Repeated renderings, orders and seeds do not increase independent case count.",
+    "Primary interaction uses the same bases; redundant masks exist only in passing profiles.",
+    "Invalid outputs stay missing and receive worst-case outcome bounds.",
+    "Inference does not extend to unseen templates, actual applicants or population harm."
+  ]
+}
