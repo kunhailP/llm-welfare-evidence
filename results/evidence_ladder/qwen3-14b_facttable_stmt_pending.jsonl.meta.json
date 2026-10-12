@@ -1,0 +1,128 @@
+{
+  "settings": {
+    "stage": "development",
+    "confirmatory": false,
+    "model": "qwen3-14b",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "data_sha256": "c6f7b543f4cbc54901be15ac4ff012d6f74d73e4809dde22191d41983e518cf3",
+    "packet_sha256": "016b20fe9118bee1ca4e0951fe3ac82894d7701e1d7724ddc8092d5aef9a935e",
+    "packets": {
+      "evidence_packet_gross.md": "a60e36e1af7bbcf2c53623a2af9aff2c650ed476dfa4f37f9057a316b69f84fc",
+      "evidence_packet_ladder.md": "c244292fc7d2d9e6f034b07c734c78dff9bcdbdb6605fb9b50cb243a63ff1c0e"
+    },
+    "filters": {
+      "surface": [
+        "S2"
+      ],
+      "cue": [
+        "neutral"
+      ]
+    },
+    "runner_sha256": "70f5064abb464c22df04d94367d5f7f5405d1aca3feaa7fce101640bc95c737e",
+    "oracle_sha256": "861044ff6143355ac899040099f98d1129811467b54e9fec21253b567e8af77c",
+    "gross_oracle_sha256": "b947b864d8c6ee3fb901d38e7ed6cda3d1c112e4e54fd28bdc14ad3b4953cab8",
+    "engine_sha256": "e93d7f53a3b2783a46ae03fbc74305adaa0a4956c1d77ca4c0ad2c786979f2e9",
+    "method": "fact_table_stmt",
+    "seeds": [
+      0,
+      1
+    ],
+    "orders": [
+      "forward",
+      "reverse"
+    ],
+    "cue": "all",
+    "bases": [
+      "grs000",
+      "grs001",
+      "grs003",
+      "grs004",
+      "grs006",
+      "grs007",
+      "grs009",
+      "grs010",
+      "lad000",
+      "lad001",
+      "lad002",
+      "lad003",
+      "lad004",
+      "lad005",
+      "lad006",
+      "lad007",
+      "lad008",
+      "lad009",
+      "lad010",
+      "lad011"
+    ],
+    "thinking": "on",
+    "max_tokens": 4096,
+    "max_model_len": 8192,
+    "max_num_seqs": 128,
+    "batch_size": 512,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "gpu_memory_utilization": 0.9,
+    "n_requests": 160
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.13.0+cu130",
+    "transformers": "5.14.1",
+    "vllm": "0.30.0",
+    "gpu": "NVIDIA L40",
+    "cuda": "13.0"
+  },
+  "dataset_manifest": {
+    "schema": "evidence-ladder-v1",
+    "stage": "development",
+    "confirmatory": false,
+    "n": 600,
+    "bases": 12,
+    "seed": 11,
+    "pathways": [
+      "abawd",
+      "gross"
+    ],
+    "surfaces": [
+      "S0",
+      "S1",
+      "S2"
+    ],
+    "styles": [
+      "narrative"
+    ],
+    "gross_full": false,
+    "packet_variant": null,
+    "pending_set": true,
+    "sha256": "c6f7b543f4cbc54901be15ac4ff012d6f74d73e4809dde22191d41983e518cf3",
+    "generator": "src/gen/make_evidence_ladder.py",
+    "generator_sha256": "bccc846decb039552e73b1eb1c5e9fa53fecd1d6f0c5a250b753f74ded444430",
+    "packet_sha256_by_name": {
+      "evidence_packet_gross.md": "a60e36e1af7bbcf2c53623a2af9aff2c650ed476dfa4f37f9057a316b69f84fc",
+      "evidence_packet_ladder.md": "c244292fc7d2d9e6f034b07c734c78dff9bcdbdb6605fb9b50cb243a63ff1c0e"
+    },
+    "oracle_sha256_by_name": {
+      "abawd": "861044ff6143355ac899040099f98d1129811467b54e9fec21253b567e8af77c",
+      "gross": "b947b864d8c6ee3fb901d38e7ed6cda3d1c112e4e54fd28bdc14ad3b4953cab8"
+    },
+    "cells": {
+      "abawd|S0|E3|missing_material": 60,
+      "abawd|S1|E3|missing_material": 60,
+      "abawd|S2|E3|missing_material": 60,
+      "abawd|S0|E3s|missing_material": 60,
+      "abawd|S1|E3s|missing_material": 60,
+      "abawd|S2|E3s|missing_material": 60,
+      "gross|S0|E3|missing_material": 40,
+      "gross|S1|E3|missing_material": 40,
+      "gross|S2|E3|missing_material": 40,
+      "gross|S0|E3s|missing_material": 40,
+      "gross|S1|E3s|missing_material": 40,
+      "gross|S2|E3s|missing_material": 40
+    },
+    "gold": {
+      "NEEDS_INFO": 600
+    },
+    "caveat": "Synthetic repeated legal profiles (three per pathway); item count is not independent case count. Cue sentences are author-written; no human construct validation. Development data only."
+  }
+}

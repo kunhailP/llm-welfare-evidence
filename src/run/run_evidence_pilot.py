@@ -71,12 +71,16 @@ def build_prompt(packet: str, item: dict, method: str, order: str) -> str:
     if method in ("fact_table", "fact_table_stmt"):
         # The exact partial record, nulls preserved, as a machine-readable table (no narrative).
         case = json.dumps(item["record"], sort_keys=True)
-        if method == "fact_table_stmt" and item.get("self_report_claim") is not None:
+        # 2026-10-12 13:55: the medical pivot carries no numeric claim (self_report_claim is None), so the statement
+        # line was silently omitted for the exemption profile in the first 8B runs (kept as *_run1); condition widened.
+        has_claim = item.get("self_report_claim") is not None or (
+            item.get("pivot") == "medical_exemption" and item.get("evidence") in ("E2", "E3s"))
+        if method == "fact_table_stmt" and has_claim:
             # 2026-10-12 (external review 2, item 3): the same correct record plus the applicant's statement,
             # so that the decision step is tested with the facts already right.
             pivot = item["pivot"]
             claim = item["self_report_claim"]
-            shown = (f"${claim:,}" if pivot in ("earned_income", "unearned_income") else str(claim))
+            shown = (f"${claim:,}" if pivot in ("earned_income", "unearned_income") else str(claim)) if claim is not None else ""
             status = "requested and not yet received" if item.get("evidence") == "E3s" else "not on file"
             case += ("\nStatements on file (not part of the verified record): the applicant states "
                      + (f"{pivot} = {shown}" if pivot != "medical_exemption" else "that a doctor has certified them unfit for work")

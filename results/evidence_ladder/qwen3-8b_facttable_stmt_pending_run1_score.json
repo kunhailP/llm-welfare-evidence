@@ -1,0 +1,373 @@
+{
+  "stage": "development",
+  "confirmatory": false,
+  "method": "fact_table_stmt",
+  "n_items": 600,
+  "n_outputs": 160,
+  "missing_requests": 640,
+  "cells": {
+    "abawd|S2|E3|missing_material": {
+      "neutral": {
+        "n": 48,
+        "accuracy": {
+          "n": 48,
+          "estimate": 0.5625,
+          "bounds": [
+            0.5625,
+            0.5625
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 48,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 48,
+          "estimate": 0.4375,
+          "bounds": [
+            0.4375,
+            0.4375
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 48,
+          "estimate": 0.5625,
+          "bounds": [
+            0.5625,
+            0.5625
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 48
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 48,
+            "bounds": [
+              0.4375,
+              0.4375
+            ]
+          },
+          "meets": {
+            "n": 48,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 48,
+            "estimate": 0.4375,
+            "bounds": [
+              0.4375,
+              0.4375
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 48,
+            "estimate": 0.5625,
+            "bounds": [
+              0.5625,
+              0.5625
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 628.3125
+    },
+    "abawd|S2|E3s|missing_material": {
+      "neutral": {
+        "n": 48,
+        "accuracy": {
+          "n": 48,
+          "estimate": 0.6666666666666666,
+          "bounds": [
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 48,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 48,
+          "estimate": 0.3333333333333333,
+          "bounds": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 48,
+          "estimate": 0.6666666666666666,
+          "bounds": [
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 48
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 48,
+            "bounds": [
+              0.33333333333333337,
+              0.33333333333333337
+            ]
+          },
+          "meets": {
+            "n": 48,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 48,
+            "estimate": 0.3333333333333333,
+            "bounds": [
+              0.3333333333333333,
+              0.3333333333333333
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 48,
+            "estimate": 0.6666666666666666,
+            "bounds": [
+              0.6666666666666666,
+              0.6666666666666666
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 630.0416666666666
+    },
+    "gross|S2|E3|missing_material": {
+      "neutral": {
+        "n": 32,
+        "accuracy": {
+          "n": 32,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 32,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 32,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 32,
+          "estimate": 1.0,
+          "bounds": [
+            1.0,
+            1.0
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 32
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 32,
+            "bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "meets": {
+            "n": 32,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 32,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 32,
+            "estimate": 1.0,
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 703.46875
+    },
+    "gross|S2|E3s|missing_material": {
+      "neutral": {
+        "n": 32,
+        "accuracy": {
+          "n": 32,
+          "estimate": 0.96875,
+          "bounds": [
+            0.96875,
+            0.96875
+          ],
+          "invalid": 0
+        },
+        "meets": {
+          "n": 32,
+          "estimate": 0.03125,
+          "bounds": [
+            0.03125,
+            0.03125
+          ],
+          "invalid": 0
+        },
+        "fails": {
+          "n": 32,
+          "estimate": 0.0,
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "invalid": 0
+        },
+        "needs_info": {
+          "n": 32,
+          "estimate": 0.96875,
+          "bounds": [
+            0.96875,
+            0.96875
+          ],
+          "invalid": 0
+        },
+        "gold": {
+          "NEEDS_INFO": 32
+        },
+        "premature_definitive": {
+          "any": {
+            "n": 32,
+            "bounds": [
+              0.03125,
+              0.03125
+            ]
+          },
+          "meets": {
+            "n": 32,
+            "estimate": 0.03125,
+            "bounds": [
+              0.03125,
+              0.03125
+            ],
+            "invalid": 0
+          },
+          "fails": {
+            "n": 32,
+            "estimate": 0.0,
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "invalid": 0
+          },
+          "needs_info": {
+            "n": 32,
+            "estimate": 0.96875,
+            "bounds": [
+              0.96875,
+              0.96875
+            ],
+            "invalid": 0
+          }
+        }
+      },
+      "_mean_output_tokens": 866.65625
+    }
+  },
+  "contrasts": {},
+  "interactions": {},
+  "restoration": {},
+  "lenient_parse": {
+    "enabled": false,
+    "relabelled": 0
+  },
+  "extraction": {},
+  "trace_mentions": {
+    "abawd|S2|E3s|missing_material|neutral": {
+      "n": 48,
+      "mention": 0,
+      "no_mention_correct": 32,
+      "no_mention_wrong_or_invalid": 16
+    },
+    "abawd|S2|E3|missing_material|neutral": {
+      "n": 48,
+      "mention": 0,
+      "no_mention_correct": 27,
+      "no_mention_wrong_or_invalid": 21
+    },
+    "gross|S2|E3s|missing_material|neutral": {
+      "n": 32,
+      "mention": 0,
+      "no_mention_correct": 31,
+      "no_mention_wrong_or_invalid": 1
+    },
+    "gross|S2|E3|missing_material|neutral": {
+      "n": 32,
+      "mention": 0,
+      "no_mention_correct": 32
+    }
+  },
+  "caveats": [
+    "Development data: no confirmatory p-values.",
+    "Repeated renderings, orders and seeds are repeated measurements of the same bases.",
+    "Invalid or truncated outputs are unknown outcomes and widen the bounds; they are never coded as a label.",
+    "Three logical profiles per pathway; no held-out templates, applicants or legal audit beyond the packet."
+  ]
+}

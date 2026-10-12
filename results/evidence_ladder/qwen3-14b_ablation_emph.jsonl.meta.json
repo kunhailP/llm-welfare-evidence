@@ -1,0 +1,111 @@
+{
+  "settings": {
+    "stage": "development",
+    "confirmatory": false,
+    "model": "qwen3-14b",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "data_sha256": "2190346eb8e24ab61c6da35a9df43e2e8f1d07563e01aeb3653aeba16fcc622e",
+    "packet_sha256": "dc681a5edaa7c76d3f689d394617d8e15478a44c1e47bca6fe5b7fce081ecf51",
+    "packets": {
+      "evidence_packet_ladder_emph.md": "dc681a5edaa7c76d3f689d394617d8e15478a44c1e47bca6fe5b7fce081ecf51"
+    },
+    "filters": {
+      "condition": [
+        "missing_material"
+      ]
+    },
+    "runner_sha256": "a244ed22c5fcb03abcd0c66e053b543e4f4429bb3772a6447c0cf165e3cd3e20",
+    "oracle_sha256": "861044ff6143355ac899040099f98d1129811467b54e9fec21253b567e8af77c",
+    "gross_oracle_sha256": "b947b864d8c6ee3fb901d38e7ed6cda3d1c112e4e54fd28bdc14ad3b4953cab8",
+    "engine_sha256": "e93d7f53a3b2783a46ae03fbc74305adaa0a4956c1d77ca4c0ad2c786979f2e9",
+    "method": "plain",
+    "seeds": [
+      0,
+      1
+    ],
+    "orders": [
+      "forward",
+      "reverse"
+    ],
+    "cue": "all",
+    "bases": [
+      "lad000",
+      "lad001",
+      "lad002",
+      "lad003",
+      "lad004",
+      "lad005",
+      "lad006",
+      "lad007",
+      "lad008",
+      "lad009",
+      "lad010",
+      "lad011"
+    ],
+    "thinking": "on",
+    "max_tokens": 4096,
+    "max_model_len": 8192,
+    "max_num_seqs": 128,
+    "batch_size": 512,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "gpu_memory_utilization": 0.9,
+    "n_requests": 720
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.13.0+cu130",
+    "transformers": "5.14.1",
+    "vllm": "0.30.0",
+    "gpu": "NVIDIA L40",
+    "cuda": "13.0"
+  },
+  "dataset_manifest": {
+    "schema": "evidence-ladder-v1",
+    "stage": "development",
+    "confirmatory": false,
+    "n": 520,
+    "bases": 12,
+    "seed": 11,
+    "pathways": [
+      "abawd"
+    ],
+    "surfaces": [
+      "S2"
+    ],
+    "styles": [
+      "narrative"
+    ],
+    "gross_full": false,
+    "packet_variant": "emph",
+    "pending_set": false,
+    "sha256": "2190346eb8e24ab61c6da35a9df43e2e8f1d07563e01aeb3653aeba16fcc622e",
+    "generator": "src/gen/make_evidence_ladder.py",
+    "generator_sha256": "bccc846decb039552e73b1eb1c5e9fa53fecd1d6f0c5a250b753f74ded444430",
+    "packet_sha256_by_name": {
+      "evidence_packet_ladder_emph.md": "dc681a5edaa7c76d3f689d394617d8e15478a44c1e47bca6fe5b7fce081ecf51"
+    },
+    "oracle_sha256_by_name": {
+      "abawd": "861044ff6143355ac899040099f98d1129811467b54e9fec21253b567e8af77c",
+      "gross": "b947b864d8c6ee3fb901d38e7ed6cda3d1c112e4e54fd28bdc14ad3b4953cab8"
+    },
+    "cells": {
+      "abawd|S2|E0|complete": 60,
+      "abawd|S2|E0|missing_irrelevant": 60,
+      "abawd|S2|E0|missing_material": 60,
+      "abawd|S2|E1|missing_material": 60,
+      "abawd|S2|E2|missing_material": 60,
+      "abawd|S2|E0|restored_material": 60,
+      "abawd|S2|E0|padded_irrelevant": 60,
+      "abawd|S2|E0|fair_instruction": 60,
+      "abawd|S2|E0|missing_redundant": 40
+    },
+    "gold": {
+      "FAILS": 60,
+      "NEEDS_INFO": 300,
+      "MEETS": 160
+    },
+    "caveat": "Synthetic repeated legal profiles (three per pathway); item count is not independent case count. Cue sentences are author-written; no human construct validation. Development data only."
+  }
+}

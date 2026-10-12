@@ -9,7 +9,7 @@ Companion repo: https://github.com/kunhailP/llm-welfare-discretion (the hub: SNA
 results, Design C audit, stage-1 history). That repo is the record for Paper 1; this one is Paper 2.
 Split on 2026-10-08 so that this study starts clean, with the standing policies carried over (docs/NORTH_STAR.md).
 
-## Status (2026-10-12): ladder run on Qwen3-8B and GPT-5; 14B and the E1/E2 request protocol in the queue
+## Status (2026-10-12, 12:10 UTC): ladder run on Qwen3-8B, Qwen3-14B and GPT-5; ablation, gpt-oss-20b and the pending-wording cells in the queue
 After the external review of 2026-10-12 (summarised in docs/decisions.md): cue-surface ladder S0/S1/S2, evidence ladder E0/E1/E2,
 restoration arms, a second rule pathway (gross-income test) and a one-step clarification protocol (`--method request`) are
 implemented with reading rules fixed before any run (docs/design/design_D_ladder.md). Findings so far (docs/results/design_D_ladder_pilot.md):
@@ -21,7 +21,21 @@ requirement and passes on the income test); GPT-5 keeps the error only for the u
 work at 8B: the one-step REQUEST protocol (names exactly the pivotal field; 100 % correct after verification, 92.75 % of all
 missing-material inputs complete the request-and-answer path at E0) and null-preserving extraction with the rule oracle
 (0.92-1.00 at E2 under a post-hoc lenient parse; the strict parser marks 30 % of extractions invalid for trailing text). A legal reviewer upheld the gold labels
-(docs/design/legal_review_response_2026-10-12.md). Read traces first: `python src/eval/read_traces.py ...` (rule R7).
+(docs/design/legal_review_response_2026-10-12.md). Qwen3-14B (sections 10-13 of the results doc): the error is larger than
+at 8B on the work requirement (NEEDS_INFO 0.00-0.08 when the statement is on file; the traces quote the packet's rule and apply
+'not established' as zero), slightly smaller on the income test; cues still show no consistent effect; extraction with nulls
+holds the hours (0 fills) but writes the undocumented exemption claim as `false` in 13 of 40 cases; the REQUEST protocol at
+E1/E2 (8B and 14B) clears the pre-registered bar when the line is absent and not when the applicant's statement is on file. Split by error
+form (sections 16-16b, three open models plus GPT-5): an undocumented claim of a *status* (the medical exemption) is read as the
+status's absence by every model (0.97-1.00 wrongful denials, GPT-5 included) and the REQUEST option is almost never taken for it;
+an undocumented *quantity* (program hours) is zeroed by the smaller models (Qwen3 0.75-0.93, gpt-oss-20b 0.39-0.49, GPT-5 0) and
+the REQUEST option removes most of that form. Packet ablation (section 18): removing the packet's evidence sentences leaves the
+E2 denial unchanged; a verbatim reminder lifts NEEDS_INFO on the hours form and not at all on the status form; removing the
+sentences removes the E0 denials on the exemption profile, so the packet is a treatment and the main study carries a packet arm. Tabular records with explicit nulls (sections 20, 22):
+the quantity error nearly disappears (0.88-1.00 NEEDS_INFO) and the status error becomes total (`medical_exemption: null` ->
+FAILS 1.00 at every evidence state, 8B and 14B); the pending wording (sections 19, 21, 23) removes the error only at GPT-5.
+Section 24 of the results doc lists the supported claims and the items open for the PI; all queued runs finished 2026-10-12 14:58 UTC.
+Read traces first: `python src/eval/read_traces.py ...` (rule R7).
 
 ## Status (2026-10-08)
 Development protocol implemented and CPU-checked (docs/results/design_D_cpu_checks.md). First GPU runs on Qwen3-8B
