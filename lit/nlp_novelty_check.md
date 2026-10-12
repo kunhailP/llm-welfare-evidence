@@ -128,3 +128,15 @@ I found no paper that (a) uses an external legal/normative specification to deci
 - Follow-ups to Pan et al. 2609.30768 (thinking x fairness) and Arcuschin et al. (unverbalized bias) in legal/benefits domains.
 - Any "difference awareness" follow-up from Wang/Ho/Koyejo applying it to rules or representations.
 - Any statute-specified or path-specific erasure work in LLMs (none found as of 2026-10-05).
+
+---
+
+## D. Added 2026-10-12 from the external review (verified at abstract level by web search on 2026-10-12; full text not read)
+
+| # | Work | What it already shows | What Design D must add |
+|---|---|---|---|
+| D1 | Parrish et al. (2022). *BBQ: A Hand-Built Bias Benchmark for Question Answering.* Findings of ACL 2022. arXiv:2110.08193 | Ambiguous vs disambiguated contexts; the correct answer under ambiguity is "unknown"; models lean on stereotypes most when context is ambiguous and still ~3 points in disambiguated contexts | A rule-indexed sufficiency gold (when the record settles the case and when it does not), the two error types (premature definitive vs over-verification) measured together, and a non-demographic cue tied to the welfare-politics construct |
+| D2 | Saeidi et al. (2018). *ShARC.* EMNLP 2018 (D18-1233) | Rules + underspecified scenarios require follow-up questions | The interaction of a moral description with decision-critical missingness, and which fields are requested from whom |
+| D3 | Baekgaard, Moynihan & Thomsen (2021). *Why Do Policymakers Support Administrative Burdens?* JPART. Replication: Tiggelaar & George (2025), Public Administration (Flanders; smaller effects, partial replication) | Politicians are less willing to impose burdens on claimants they see as more deserving | Whether an automated determiner imposes a verification burden differentially on the same evidence (the REQUEST rate by cue); the human result is the comparison point, not a claim about caseworkers |
+| D4 | Halling, Christensen, Hansen & Petersen (2024). *Deservingness at the frontline.* Public Administration (pre-registered vignette experiment, 1,050 caseworkers) | A responsibility cue changed judged responsibility but not willingness to help or sanction | A counter-result to state: deservingness cues need not move frontline decisions; the LLM result is about the automated system, not about humans. Mixed evidence elsewhere (Norwegian sanctions doubled under a "choice" framing; Swedish officers: responsibility reduced training placement) |
+Sources: https://arxiv.org/abs/2110.08193 ; https://aclanthology.org/D18-1233/ ; https://academicnewsletter.sufe.edu.cn/info/418515 (JPART abstract) ; https://scholars.cityu.edu.hk/en/publications/a-replication-of-why-do-policymakers-support-administrative-burde/ ; https://vive.dk/en/publications/deservingness-at-the-frontline-how-health-related-responsibility-cues-affect-sanctioning-and-prioritization-of-citizens-yz21p61v

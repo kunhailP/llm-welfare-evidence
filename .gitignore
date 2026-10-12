@@ -7,3 +7,4 @@ __pycache__/
 # Generated development data (regenerate: src/gen/make_evidence_pilot.py)
 data/evidence_pilot/
 # results/evidence_pilot/ is tracked since 2026-10-08: the Qwen3-8B smoke and neutral runs were produced on the L40 before the pod shutdown and need a GPU to regenerate
+# results/evidence_ladder/: ladder runs of 2026-10-12 (tracked: raw outputs with traces, scores, meta); large files, see docs/results/design_D_ladder_pilot.md
