@@ -1,0 +1,87 @@
+{
+  "schema": "evidence-ladder-v1",
+  "stage": "development",
+  "confirmatory": false,
+  "n": 2340,
+  "bases": 12,
+  "seed": 11,
+  "pathways": [
+    "abawd",
+    "gross"
+  ],
+  "surfaces": [
+    "S0",
+    "S1",
+    "S2"
+  ],
+  "styles": [
+    "narrative"
+  ],
+  "gross_full": false,
+  "packet_variant": null,
+  "pending_set": false,
+  "sha256": "38e624c42cbe0168db61d67ded7def081013e44ba54690d2d9176446510390e0",
+  "generator": "src/gen/make_evidence_ladder.py",
+  "generator_sha256": "bccc846decb039552e73b1eb1c5e9fa53fecd1d6f0c5a250b753f74ded444430",
+  "packet_sha256_by_name": {
+    "evidence_packet_gross.md": "a60e36e1af7bbcf2c53623a2af9aff2c650ed476dfa4f37f9057a316b69f84fc",
+    "evidence_packet_ladder.md": "c244292fc7d2d9e6f034b07c734c78dff9bcdbdb6605fb9b50cb243a63ff1c0e"
+  },
+  "oracle_sha256_by_name": {
+    "abawd": "861044ff6143355ac899040099f98d1129811467b54e9fec21253b567e8af77c",
+    "gross": "b947b864d8c6ee3fb901d38e7ed6cda3d1c112e4e54fd28bdc14ad3b4953cab8"
+  },
+  "cells": {
+    "abawd|S0|E0|complete": 60,
+    "abawd|S1|E0|complete": 60,
+    "abawd|S2|E0|complete": 60,
+    "abawd|S0|E0|missing_irrelevant": 60,
+    "abawd|S1|E0|missing_irrelevant": 60,
+    "abawd|S2|E0|missing_irrelevant": 60,
+    "abawd|S0|E0|missing_material": 60,
+    "abawd|S1|E0|missing_material": 60,
+    "abawd|S2|E0|missing_material": 60,
+    "abawd|S0|E1|missing_material": 60,
+    "abawd|S1|E1|missing_material": 60,
+    "abawd|S2|E1|missing_material": 60,
+    "abawd|S0|E2|missing_material": 60,
+    "abawd|S1|E2|missing_material": 60,
+    "abawd|S2|E2|missing_material": 60,
+    "abawd|S0|E0|restored_material": 60,
+    "abawd|S1|E0|restored_material": 60,
+    "abawd|S2|E0|restored_material": 60,
+    "abawd|S0|E0|padded_irrelevant": 60,
+    "abawd|S1|E0|padded_irrelevant": 60,
+    "abawd|S2|E0|padded_irrelevant": 60,
+    "abawd|S0|E0|fair_instruction": 60,
+    "abawd|S1|E0|fair_instruction": 60,
+    "abawd|S2|E0|fair_instruction": 60,
+    "abawd|S0|E0|missing_redundant": 40,
+    "abawd|S1|E0|missing_redundant": 40,
+    "abawd|S2|E0|missing_redundant": 40,
+    "gross|S0|E0|complete": 60,
+    "gross|S1|E0|complete": 60,
+    "gross|S2|E0|complete": 60,
+    "gross|S0|E0|missing_irrelevant": 60,
+    "gross|S1|E0|missing_irrelevant": 60,
+    "gross|S2|E0|missing_irrelevant": 60,
+    "gross|S0|E0|missing_material": 40,
+    "gross|S1|E0|missing_material": 40,
+    "gross|S2|E0|missing_material": 40,
+    "gross|S0|E1|missing_material": 40,
+    "gross|S1|E1|missing_material": 40,
+    "gross|S2|E1|missing_material": 40,
+    "gross|S0|E2|missing_material": 40,
+    "gross|S1|E2|missing_material": 40,
+    "gross|S2|E2|missing_material": 40,
+    "gross|S0|E0|missing_redundant": 20,
+    "gross|S1|E0|missing_redundant": 20,
+    "gross|S2|E0|missing_redundant": 20
+  },
+  "gold": {
+    "FAILS": 480,
+    "NEEDS_INFO": 1260,
+    "MEETS": 600
+  },
+  "caveat": "Synthetic repeated legal profiles (three per pathway); item count is not independent case count. Cue sentences are author-written; no human construct validation. Development data only."
+}
